@@ -1,0 +1,60 @@
+@import 'colors';
+
+.liked-heroes {
+  height: 74px;
+  margin: 0;
+  padding: 15px;
+  border-radius: 16px;
+  border: 1px solid $purple;
+  background-color: $ligth-purple;
+  overflow-y: scroll;
+
+  &__open {
+    height: 273px;
+    background-color: $blue;
+    transition-property: background-color;
+    transition-delay: 5000;
+    transition-timing-function: linear;
+  }
+
+  &__close {
+    height: 74px;
+    border-radius: 16px;
+    border: 1px solid $purple;
+  }
+
+  &__title {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+
+  &__heart {
+    width: 35px;
+    background: $purple;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+  }
+
+  &__arrow {
+    width: 35px;
+    background: $gray;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px;
+  }
+
+  &__movies {
+    display: flex;
+  }
+}
+
+.liked-heroes::-webkit-scrollbar {
+  display: none;
+}

@@ -1,0 +1,18 @@
+@import 'colors';
+
+.search {
+  background-color: $dark-purple;
+  border: none;
+  color: $white;
+  height: 40px;
+
+  &__image {
+    border-radius: 50% 0% 0% 50% !important;
+  }
+}
+
+.form-control:focus {
+  background-color: $dark-purple;
+  border: none;
+  color: $white;
+}
